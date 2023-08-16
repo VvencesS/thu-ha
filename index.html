@@ -59,8 +59,8 @@
           <span class="avatar-padding">
             <a
               class="gb_A gb_La gb_f"
-              aria-label="Anh Đức Soạn đáng yêu!! :b"
-              title="Anh Đức Soạn đáng yêu!! :b"
+              aria-label="Anh Soạn đáng yêu!! :b"
+              title="Anh Soạn đáng yêu!! :b"
               href="#"
               role="button"
               tabindex="0"
@@ -71,10 +71,10 @@
               <img
                 id="avatar"
                 class="gb_Ba gbii"
-                src="https://scontent.fhan2-2.fna.fbcdn.net/v/t1.6435-1/130905377_2745297575800423_4934307131550793363_n.jpg?stp=cp0_dst-jpg_p60x60&_nc_cat=110&ccb=1-7&_nc_sid=7206a8&_nc_ohc=p1_B3CGouewAX8lHUcL&_nc_ht=scontent.fhan2-2.fna&oh=00_AT_WJZyzy1Y4ZQ5cl-IHvi7jleOrbJLQ1SrppFQ0PVu2aw&oe=62D7D5DB"
+                src="./assert/avatar.jpg"
                 srcset="
-                  https://scontent.fhan2-2.fna.fbcdn.net/v/t1.6435-1/130905377_2745297575800423_4934307131550793363_n.jpg?stp=cp0_dst-jpg_p60x60&_nc_cat=110&ccb=1-7&_nc_sid=7206a8&_nc_ohc=p1_B3CGouewAX8lHUcL&_nc_ht=scontent.fhan2-2.fna&oh=00_AT_WJZyzy1Y4ZQ5cl-IHvi7jleOrbJLQ1SrppFQ0PVu2aw&oe=62D7D5DB 1x,
-                  https://scontent.fhan2-2.fna.fbcdn.net/v/t1.6435-1/130905377_2745297575800423_4934307131550793363_n.jpg?stp=cp0_dst-jpg_p60x60&_nc_cat=110&ccb=1-7&_nc_sid=7206a8&_nc_ohc=p1_B3CGouewAX8lHUcL&_nc_ht=scontent.fhan2-2.fna&oh=00_AT_WJZyzy1Y4ZQ5cl-IHvi7jleOrbJLQ1SrppFQ0PVu2aw&oe=62D7D5DB 2x
+                ./assert/avatar.jpg 1x,
+                ./assert/avatar.jpg 2x
                 "
                 alt="Anh Soạn đáng yêu!! :b"
                 aria-hidden="true"
@@ -184,14 +184,12 @@
 
         <h2 class="content__title no-select">
           <span class="content__title-sub color-paragraph">
-            Nếu được tặng quà <span id="gift">&#127873;</span> cho em, anh sẽ
-            không tặng hoa <span id="flower-1">🥀</span>
+            Nếu được tặng quà cho em, anh sẽ không tặng hoa 
           </span>
         </h2>
         <h2 class="content__title no-select">
           <span class="content__title-sub color-paragraph">
-            vì ai lại tặng hoa <span id="flower-2">&#127799;</span> cho một bông
-            hoa <span id="man">&#128584;</span> bao giờ!?
+            vì ai lại tặng hoa cho một bông hoa bao giờ!?
           </span>
         </h2>
 
@@ -252,24 +250,6 @@
         }, 1500);
       });
 
-      document
-        .querySelector("span.content__title-sub")
-        .addEventListener("mouseover", function () {
-          document.querySelector("span#gift").innerHTML = "&#127872;";
-          document.querySelector("span#flower-1").innerHTML = "&#127801;";
-          document.querySelector("span#flower-2").innerHTML = "&#127802;";
-          document.querySelector("span#man").innerHTML = "&#128586;";
-        });
-
-      document
-        .querySelector("span.content__title-sub")
-        .addEventListener("mouseout", function () {
-          document.querySelector("span#gift").innerHTML = "&#127873;";
-          document.querySelector("span#flower-1").innerHTML = "🥀";
-          document.querySelector("span#flower-2").innerHTML = "&#127799;";
-          document.querySelector("span#man").innerHTML = "&#128584;";
-        });
-
       const hearts = [
         "💘",
         "💗",
@@ -315,7 +295,7 @@
       }, 500);
     </script>
     <script type="text/javascript">
-      var heart = document.getElementsByClassName("heart"),
+      var heart = document.getElementById("circle"),
         pfx = ["webkit", "moz", "MS", "o", ""],
         hovered = false;
 
